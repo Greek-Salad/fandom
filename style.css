@@ -1,13 +1,13 @@
 :root {
-  --bg: #1e1f22;
-  --text: #dcdfe4;
-  --text-muted: #b0b4ba;
-  --link: #6ea8ff;
-  --link-visited: #a371f7;
-  --border: #3a3d43;
-  --light-bg: #2a2d33;
-  --quote-bg: #25282d;
-  --header-border: #3a3d43;
+  --bg: rgb(30, 31, 34);
+  --text: rgb(220, 223, 228);
+  --text-muted: rgb(176, 180, 186);
+  --link: rgb(110, 168, 255);
+  --link-visited: rgb(163, 113, 247);
+  --border: rgb(58, 61, 67);
+  --light-bg: rgb(42, 45, 51);
+  --quote-bg: rgba(10, 15, 20, 0.6);
+  --header-border: rgb(58, 61, 67);
 }
 
 * {
@@ -16,16 +16,48 @@
   padding: 0;
 }
 
+/* Фон на body */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  padding: 16px;
+  padding: 20px;
   max-width: 960px;
   margin: 0 auto;
+  position: relative;
+  background-color: var(--bg);
 }
 
+/* Размытый полупрозрачный фон ПОД контентом */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+/* Тёмная подложка поверх фона (для читаемости) */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: -1;
+}
+
+/* Основной контент — обычный поток */
 h1 {
   font-size: 1.8rem;
   margin: 1.2rem 0 0.8rem;
@@ -79,6 +111,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Инфобокс — справа, как в вики */
 .infobox {
   float: right;
   width: 280px;
@@ -88,6 +121,7 @@ a:hover {
   padding: 0;
   border-radius: 6px;
   font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* тень как на Fandom */
 }
 
 .infobox h3 {
@@ -126,13 +160,28 @@ a:hover {
   width: 100%;
   height: auto;
   display: block;
-  aspect-ratio: auto; /* уважает исходное соотношение */
-  object-fit: cover;   /* можно заменить на 'contain', если важно видеть всё изображение */
+  aspect-ratio: auto;
+  object-fit: cover;
 }
 
+/* Подвал */
+#footer {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  clear: both; /* важно, чтобы подвал был под всем контентом, включая infobox */
+}
+
+#related-pages a {
+  color: var(--link);
+}
+
+/* Адаптивность */
 @media (max-width: 768px) {
   body {
-    padding: 12px;
+    padding: 16px;
     font-size: 0.95rem;
   }
 
@@ -162,12 +211,17 @@ a:hover {
     padding: 0.5rem 0.8rem;
     font-size: 0.95rem;
   }
-}
 
+  /* На мобильных отключаем fixed-фон для производительности */
+  body::before,
+  body::after {
+    background-attachment: scroll;
+  }
+}
 
 @media (max-width: 480px) {
   body {
-    padding: 10px;
+    padding: 12px;
   }
 
   .infobox li strong {
