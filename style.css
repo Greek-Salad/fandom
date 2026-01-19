@@ -22,7 +22,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   padding: 20px;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
   position: relative;
   background-color: var(--bg);
@@ -114,7 +114,7 @@ a:hover {
 /* Инфобокс — справа, как в вики */
 .infobox {
   float: right;
-  width: 280px;
+  width: 320px;
   margin: 0 0 1.2rem 1.5rem;
   border: 1px solid var(--border);
   background-color: var(--light-bg);
@@ -124,29 +124,54 @@ a:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* тень как на Fandom */
 }
 
-.infobox h3 {
+.infobox h2 {
   font-size: 1.15rem;
   text-align: center;
-  margin: 14px 0 12px;
+  padding: 12px 14px;
+  margin: 0;
+  border-bottom: 1px solid var(--border);
   color: var(--text);
+  background-color: var(--quote-bg);
 }
+
+/* === Изменения для двухколоночного списка с разделителями === */
 
 .infobox ul {
   list-style: none;
-  margin: 0 14px 14px;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .infobox li {
   display: flex;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px; /* Промежуток между колонками */
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
 }
 
+/* Левая колонка (метка) - жирный шрифт */
 .infobox li strong {
-  min-width: 100px;
-  flex-shrink: 0;
+  font-weight: bold;
   color: var(--text-muted);
+  text-align: left;
+  flex-basis: 100px;
+  /* Убираем min-width, чтобы не мешал grid */
+}
+
+/* Правая колонка (значение) */
+.infobox li span {
+  color: var(--text);
+  text-align: left;
+  /* Добавляем word-break для корректного переноса длинных слов */
+  word-break: break-word;
+  flex-basis: 180px;
+}
+
+/* Убираем последний разделитель */
+.infobox li:last-child {
+  border-bottom: none;
 }
 
 .infobox-image {
@@ -162,6 +187,16 @@ a:hover {
   display: block;
   aspect-ratio: auto;
   object-fit: cover;
+
+  /* Начальное состояние — немного затемнено */
+  opacity: 0.95;
+  transition: opacity 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.infobox-image img:hover {
+  opacity: 1;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.07);
 }
 
 /* Подвал */
@@ -231,4 +266,86 @@ a:hover {
   ul, ol {
     margin-left: 1.5rem;
   }
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--light-bg);
+  color: var(--text);
+  padding: 16px 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 90%;
+  width: auto;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  padding: 0;
+  line-height: 1;
+}
+
+.close-btn:hover {
+  color: #ff6b6b; /* Красный оттенок при наведении */
+}
+
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1001; /* Поверх всех элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Темный оверлей */
+  backdrop-filter: blur(4px); /* Размытие фона */
+}
+
+.modal-trigger {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: contain; /* Сохранение пропорций */
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.modal-close:hover {
+  color: #ccc;
 }
