@@ -1,4 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // === Модальное окно спойлеров ===
+  const spoilerModal = document.getElementById("spoiler-modal");
+  const acceptBtn = document.getElementById("accept-spoilers");
+  const rejectBtn = document.getElementById("reject-spoilers");
+
+  // Проверяем, соглашался ли пользователь ранее
+  if (localStorage.getItem("acceptedSpoilers") !== "true") {
+    spoilerModal.style.display = "flex"; // Показываем модальное окно
+  } else {
+    spoilerModal.style.display = "none"; // Скрываем, если уже принимал
+  }
+
+  // Обработчик кнопки "Рискнуть"
+  acceptBtn.addEventListener("click", function () {
+    spoilerModal.style.display = "none";
+    localStorage.setItem("acceptedSpoilers", "true"); // Запоминаем согласие
+  });
+
+  // Обработчик кнопки "Свалить"
+  rejectBtn.addEventListener("click", function () {
+    window.close(); // Закрывает вкладку
+    // Если window.close() не сработает из-за политик безопасности браузера:
+    // можно перенаправить на blank или внешнюю страницу:
+    // window.location.href = "about:blank";
+  });
+
+  // === Остальной код ===
   const banner = document.getElementById("cookie-banner");
   const closeButton = document.getElementById("close-cookie-btn");
 
