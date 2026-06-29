@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учительница математики из «школы нового формата», главная героиня «Гореть тебе в Аду» и позднее одна из женщин, сумевших выбраться из России в «Уберлебен».">
+  <title>Диана Николаевна - SaladFandom</title>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("saladFandomTheme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+        if (localStorage.getItem("saladFandomAcceptedSpoilers") === "true") {
+          document.documentElement.dataset.spoilersAccepted = "true";
+        }
+        if (localStorage.getItem("saladFandomCookiePanelClosed") === "true") {
+          document.documentElement.dataset.cookiePanelClosed = "true";
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="/fandom/assets/styles/site.css">
+  <link rel="shortcut icon" href="/fandom/assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body style="--page-bg-image-dark: url('/fandom/assets/images/backgrounds/default-dark.png'); --page-bg-image-light: url('/fandom/assets/images/backgrounds/default-dark.png')" data-spoiler-key="saladFandomAcceptedSpoilers" data-cookie-key="saladFandomCookiePanelClosed" data-theme-key="saladFandomTheme">
+  <div id="spoiler-modal" class="spoiler-modal" aria-modal="true" role="dialog" aria-labelledby="spoiler-title">
+    <div class="spoiler-content">
+      <h2 id="spoiler-title">Осторожно, спойлеры</h2>
+      <p>На сайте содержится информация по произведениям, включая важные сюжетные раскрытия.</p>
+      <div class="spoiler-buttons">
+        <button id="accept-spoilers" class="spoiler-btn accept" type="button">Рискнуть</button>
+        <button id="reject-spoilers" class="spoiler-btn reject" type="button">Свалить</button>
+      </div>
+    </div>
+  </div>
+  
+    <header class="site-header">
+      <div class="site-header-main">
+        <a class="site-logo" href="/fandom/">SaladFandom</a>
+        <div class="site-tools">
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Сменить тему" aria-pressed="false">
+            <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M19.45 15.2A8.35 8.35 0 0 1 8.8 4.55 7.15 7.15 0 1 0 19.45 15.2Z" fill="currentColor"/>
+              <path d="M17.7 2.5l.45 1.15 1.15.45-1.15.45-.45 1.15-.45-1.15-1.15-.45 1.15-.45.45-1.15ZM20.2 7.1l.3.75.75.3-.75.3-.3.75-.3-.75-.75-.3.75-.3.3-.75Z" fill="currentColor"/>
+            </svg>
+            <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <form class="site-search" role="search">
+            <label>
+              <span>Поиск</span>
+              <input type="search" autocomplete="off" placeholder="Найти статью">
+            </label>
+            <div class="search-results" hidden></div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <nav class="work-subnav" aria-label="Произведения">
+      
+        <div class="work-subnav-item ">
+          <a class="work-subnav-link is-active" href="/fandom/works/hellfire/" title="Гореть тебе в Аду" aria-haspopup="true">
+            <b>Гореть тебе в Аду</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+    <div class="work-dropdown-panel">
+      <div class="work-dropdown-links">
+        <a href="/fandom/articles/DianaFirsova/"><strong>Диана Николаевна</strong></a><a href="/fandom/articles/MarkArefiev/"><strong>Марк Витальевич</strong></a><a href="/fandom/articles/DmitryPetrovich/"><strong>Дмитрий Петрович</strong></a>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      
+        <div class="work-subnav-item ">
+          <a class="work-subnav-link " href="/fandom/works/train/" title="Весьма странная гармония" aria-haspopup="true">
+            <b>Весьма странная гармония</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+    <div class="work-dropdown-panel">
+      <div class="work-dropdown-links">
+        <span class="work-dropdown-empty">Персонажи пока не добавлены.</span>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      
+        <div class="work-subnav-item ">
+          <a class="work-subnav-link " href="/fandom/works/mondschein/" title="От предвечной Тьмы к лунному Свету" aria-haspopup="true">
+            <b>От предвечной Тьмы к лунному Свету</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+      <div class="work-dropdown-panel has-submenus">
+        <div class="work-dropdown-groups">
+          
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/mondschein-main-heroes/">
+        <strong>Главные герои</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/IgorMerkulov/"><strong>Игорь Меркулов</strong></a><a href="/fandom/articles/Yelshas/"><strong>Йельшас</strong></a><a href="/fandom/articles/RitaKushnarevskaya/"><strong>Рита Кушнарёвская</strong></a><a href="/fandom/articles/DjezefKaganovichJr/"><strong>Джезеф Каганович-младший</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/igor-friends/">
+        <strong>Дружеская компания Игоря</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/YuriGarmatin/"><strong>Юрий Гарматин</strong></a><a href="/fandom/articles/LidiaUdelman/"><strong>Лидия Удельман</strong></a><a href="/fandom/articles/KatyaPilipceva/"><strong>Екатерина Пилипцева</strong></a><a href="/fandom/articles/MatveyLevchenko/"><strong>Матвей Левченко</strong></a><a href="/fandom/articles/IgorMerkulov/"><strong>Игорь Меркулов</strong></a><a href="/fandom/articles/NastyaGallanova/"><strong>Анастасия Галланова</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/geonetika-staff/">
+        <strong>Сотрудники Геонетики</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/VadimAndreevich/"><strong>Вадим Андреевич</strong></a><a href="/fandom/articles/IgorMerkulov/"><strong>Игорь Меркулов</strong></a><a href="/fandom/articles/NikitaYugotkin/"><strong>Никита Юготкин</strong></a><a href="/fandom/articles/KostyaNerinov/"><strong>Константин Неринов</strong></a><a href="/fandom/articles/Geonetika/"><strong>Геонетика</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/gray-world-gods/">
+        <strong>Обитатели Серого мира</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/Shalkhut/"><strong>Шалхут</strong></a><a href="/fandom/articles/Inishraeda/"><strong>Инишраэда</strong></a><a href="/fandom/articles/Avakuth/"><strong>Авакутх</strong></a><a href="/fandom/articles/Mnaalkh/"><strong>Мнаалх</strong></a><a href="/fandom/articles/Erkhenes/"><strong>Эрхенес</strong></a><a href="/fandom/articles/Yelshas/"><strong>Йельшас</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/mondschein-officials/">
+        <strong>Чиновники</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/LeonidStudyarov/"><strong>Леонид Студяров</strong></a><a href="/fandom/articles/OlgaForgunova/"><strong>Ольга Форгунова</strong></a><a href="/fandom/articles/SavelyKenin/"><strong>Савелий Кенин</strong></a><a href="/fandom/articles/DaniilZakutasov/"><strong>Даниил Закутасов</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/mondschein-businessmen/">
+        <strong>Бизнесмены</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/VadimAndreevich/"><strong>Вадим Андреевич</strong></a><a href="/fandom/articles/SeraphimKushnarevsky/"><strong>Серафим Кушнарёвский</strong></a><a href="/fandom/articles/YuriBuguev/"><strong>Юрий Бугуев</strong></a><a href="/fandom/articles/MikhailOstaschin/"><strong>Михаил Остащин</strong></a><a href="/fandom/articles/EgorShalykin/"><strong>Егор Шалыкин</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/mondschein-military/">
+        <strong>Военные</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/VladimirBelovets/"><strong>Полковник Беловец</strong></a><a href="/fandom/articles/Mokhovikov/" class="not-yet-imported"><strong>Полковник Моховиков</strong></a><a href="/fandom/articles/Zhurnov/" class="not-yet-imported"><strong>Генерал-майор Журонов</strong></a><a href="/fandom/articles/Shardinin/" class="not-yet-imported"><strong>Генерал-майор Шардинин</strong></a><a href="/fandom/articles/Mugerov/" class="not-yet-imported"><strong>Полковник Мугеров</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/mondschein-organizations/">
+        <strong>Организации</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/Geonetika/"><strong>Геонетика</strong></a><a href="/fandom/articles/FSDataLabs/"><strong>Факин Системс (FS Data Labs)</strong></a><a href="/fandom/articles/FtorHimKompleks/"><strong>ФторХимКомплекс</strong></a><a href="/fandom/articles/QuartzOptima/"><strong>КварцОптима</strong></a><a href="/fandom/articles/NorSteel/"><strong>НорСталь</strong></a><a href="/fandom/articles/TechnoStroyPlus/"><strong>ТехноСтройПлюс</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/mondschein-other-characters/">
+        <strong>Прочие персонажи</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/RomanMariatin/"><strong>Роман Мариатин</strong></a><a href="/fandom/articles/AlinaTsvilling/"><strong>Алина Цвиллинг</strong></a><a href="/fandom/articles/Sigismund/"><strong>Магистр Сигизмунд</strong></a><a href="/fandom/articles/Voron/"><strong>Ворон</strong></a><a href="/fandom/articles/Mereana/"><strong>Мереана</strong></a><a href="/fandom/articles/MitrofanMostovsky/"><strong>Митрофан Мостовский</strong></a><a href="/fandom/articles/Mask/"><strong>Маска</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+      </div>
+    
+          </div>
+        </div>
+      
+        <div class="work-subnav-item ">
+          <a class="work-subnav-link " href="/fandom/works/digital-fever/" title="Цифровая лихорадка" aria-haspopup="true">
+            <b>Цифровая лихорадка</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+    <div class="work-dropdown-panel">
+      <div class="work-dropdown-links">
+        <span class="work-dropdown-empty">Персонажи пока не добавлены.</span>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      
+        <div class="work-subnav-item ">
+          <a class="work-subnav-link " href="/fandom/works/silentium/" title="Силентиум" aria-haspopup="true">
+            <b>Силентиум</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+    <div class="work-dropdown-panel">
+      <div class="work-dropdown-links">
+        <span class="work-dropdown-empty">Персонажи пока не добавлены.</span>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      
+        <div class="work-subnav-item ">
+          <a class="work-subnav-link " href="/fandom/works/uberleben/" title="Уберлебен" aria-haspopup="true">
+            <b>Уберлебен</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+    <div class="work-dropdown-panel">
+      <div class="work-dropdown-links">
+        <a href="/fandom/articles/DianaFirsova/"><strong>Диана Николаевна</strong></a>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      
+        <div class="work-subnav-item is-edge-item">
+          <a class="work-subnav-link " href="/fandom/works/bigger-fish/" title="Всегда найдётся рыба крупнее" aria-haspopup="true">
+            <b>Всегда найдётся рыба крупнее</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+      <div class="work-dropdown-panel has-submenus">
+        <div class="work-dropdown-groups">
+          
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/bigger-fish-main-heroes/">
+        <strong>Главные герои</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/DjezefKaganovichJr/"><strong>Джезеф Каганович-младший</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="work-dropdown-group-item">
+      <a class="work-dropdown-group-link" href="/fandom/groups/bigger-fish-supporting/">
+        <strong>Второстепенные персонажи</strong>
+        <svg class="work-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+          <path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="work-submenu">
+        <div class="work-submenu-panel">
+          <div class="work-dropdown-links">
+            <a href="/fandom/articles/IgorMerkulov/"><strong>Игорь Меркулов</strong></a><a href="/fandom/articles/Erkhenes/"><strong>Эрхенес</strong></a><a href="/fandom/articles/WalterMorrigan/"><strong>Уолтер Морриган</strong></a><a href="/fandom/articles/DjezefKaganovichSr/"><strong>Джезеф Каганович-старший</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+        </div>
+      </div>
+    
+          </div>
+        </div>
+      
+        <div class="work-subnav-item is-edge-item">
+          <a class="work-subnav-link " href="/fandom/works/jikogiman/" title="Джикогиман" aria-haspopup="true">
+            <b>Джикогиман</b>
+            <svg class="work-subnav-chevron" aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="work-dropdown">
+            
+    <div class="work-dropdown-panel">
+      <div class="work-dropdown-links">
+        <span class="work-dropdown-empty">Персонажи пока не добавлены.</span>
+      </div>
+    </div>
+  
+          </div>
+        </div>
+      
+    </nav>
+  
+  
+    <main class="page article-page">
+      <div class="breadcrumbs">
+        <a href="/fandom/">Главная</a>
+        <span>/</span>
+        <a href="/fandom/works/hellfire/">Гореть тебе в Аду</a><span>/</span>
+        <span>Диана Николаевна</span>
+      </div>
+      <article class="wiki-article">
+        <header class="article-header">
+          <h1>Диана Николаевна</h1>
+        </header>
+        
+    <section class="content-warning" aria-label="Предупреждения по содержанию">
+      <strong>В статье есть:</strong>
+      <span>спойлеры, похищение, сексуальное насилие, суицид, посттравматические воспоминания.</span>
+    </section>
+  
+        
+          <blockquote>
+            «Я не боюсь говорить “не знаю”, ибо много чего не знаю».<br><span>- Диана Николаевна о принципе естественности в педагогике.</span>
+          </blockquote>
+        
+        <p class="lead">Учительница математики из «школы нового формата», главная героиня «Гореть тебе в Аду» и позднее одна из женщин, сумевших выбраться из России в «Уберлебен».</p>
+        
+    <aside class="infobox" aria-label="Краткая карточка: Диана Николаевна">
+      
+      <h2>Диана Николаевна</h2>
+      <ul>
+      <li>
+        <strong>Полное имя:</strong>
+        <span>Фирсова Диана Николаевна</span>
+      </li>
+    
+      <li>
+        <strong>Вид:</strong>
+        <span>Человек</span>
+      </li>
+    
+      <li>
+        <strong>Пол:</strong>
+        <span>Женский</span>
+      </li>
+    
+      <li>
+        <strong>Возраст:</strong>
+        <span>27 лет («Гореть тебе в Аду»)<br>43 года («Уберлебен»)</span>
+      </li>
+    
+      <li>
+        <strong>Статус:</strong>
+        <span>Жива</span>
+      </li>
+    
+      <li>
+        <strong>Род занятий:</strong>
+        <span>учительница математики</span>
+      </li>
+    
+      <li>
+        <strong>Место работы:</strong>
+        <span>школа нового формата</span>
+      </li>
+    
+      <li>
+        <strong>Произведения:</strong>
+        <span>«Гореть тебе в Аду»<br>«Уберлебен»</span>
+      </li>
+    
+      <li>
+        <strong>Первое появление:</strong>
+        <span>рассказ «Гореть тебе в Аду»</span>
+      </li>
+    </ul>
+    </aside>
+  
+        
+    <nav class="toc" aria-label="Содержание статьи">
+      <div class="toc-heading">
+        <h2>Содержание</h2>
+        <button class="toc-toggle" type="button" aria-expanded="true">[скрыть]</button>
+      </div>
+      <ol class="toc-list">
+        
+          <li>
+            <a href="#section-1">Общая характеристика</a>
+            
+          </li>
+        
+          <li>
+            <a href="#section-2">Биография</a>
+            
+              <ol>
+                <li><a href="#section-3">Прошлое и выбор профессии</a></li><li><a href="#section-4">Съезд математического образования</a></li><li><a href="#section-5">Знакомство с Марком</a></li><li><a href="#section-6">Похищение и выживание</a></li><li><a href="#section-7">Диана в «Уберлебен»</a></li>
+              </ol>
+            
+          </li>
+        
+          <li>
+            <a href="#section-8">Личность</a>
+            
+          </li>
+        
+          <li>
+            <a href="#section-9">Отношения</a>
+            
+              <ol>
+                <li><a href="#section-10">Марк Витальевич</a></li><li><a href="#section-11">Дмитрий Петрович</a></li><li><a href="#section-12">Эльвира, София, Стефан и Марта</a></li>
+              </ol>
+            
+          </li>
+        
+          <li>
+            <a href="#section-13">Интересные факты</a>
+            
+          </li>
+        
+      </ol>
+    </nav>
+  
+        <div class="article-content">
+          <h2 id="section-1">Общая характеристика</h2>
+<p>
+  Диана Николаевна — учительница математики и рассказчица «Гореть тебе в Аду». На момент основных событий ей 27 лет.
+  Она работает в школе нового формата, где обучение строится не вокруг механического решения задач, а вокруг
+  практических ситуаций, которые сами подводят учеников к необходимости изучать математический аппарат.
+</p>
+<p>
+  В начале рассказа Диана выглядит человеком, почти полностью ушедшим в профессию. Личная жизнь для неё не является
+  приоритетом: она избегает романтических сближений, держит дистанцию с коллегами и болезненно относится к идее семьи
+  после собственного подросткового опыта, когда на неё рано легла забота о младших братьях.
+</p>
+
+<h2 id="section-2">Биография</h2>
+<h3 id="section-3">Прошлое и выбор профессии</h3>
+<p>
+  Диана выросла в обычной школе на окраине, где, по её воспоминаниям, не было среды для развития познавательного
+  интереса. Большинство предметов она сдавала формально и быстро забывала, но с точными науками у неё сложились более
+  тёплые отношения. Став учительницей, Диана во многом пытается исправить то, чего сама недополучила в школьные годы:
+  показать ученикам, что знания могут быть живыми, прикладными и связанными с реальностью.
+</p>
+<p>
+  Её педагогика строится на естественности, доброжелательности и честном отношении к собственным ограничениям. Диана не
+  стремится изображать всезнающего наставника: она спокойно может сказать ученикам «не знаю», если уверена, что затем
+  сможет разобраться и показать им сам процесс поиска ответа.
+</p>
+
+<h3 id="section-4">Съезд математического образования</h3>
+<p>
+  В середине мая Диана отправилась со старшеклассниками в Новосибирск на съезд «Математическое образование России».
+  Помимо мероприятий для учителей там проходила олимпиада, в которой участвовала её команда из Иркутска. После разбора
+  задач с учениками Диана присутствовала на награждении и услышала, что её команда заняла первое место.
+</p>
+<p>
+  Победа стала для неё сильным эмоциональным потрясением. Диана радовалась за учеников, но ощущала собственную
+  причастность к успеху неловко, почти как проявление синдрома самозванца. Именно в этом состоянии она встретилась с
+  <a href="../MarkArefiev/">Марком Витальевичем</a>, наставником команды из Новосибирска, занявшей второе место.
+</p>
+
+<h3 id="section-5">Знакомство с <a href="/fandom/articles/MarkArefiev/">Марком</a></h3>
+<p>
+  <a href="/fandom/articles/MarkArefiev/">Марк</a> подошёл к Диане после награждения и предложил угостить её чаем, объяснив это желанием профессионального развития.
+  Диана подозревала в его словах скрытый романтический интерес, но всё же согласилась, поскольку он ссылался на
+  педагогические вопросы. Разговор действительно начался с принципов преподавания и постепенно перешёл к разбору
+  отдельных педагогических ситуаций.
+</p>
+<p>
+  Вечер затянулся. Диана устала, поделилась с <a href="/fandom/articles/MarkArefiev/">Марком</a> ссылками на полезную литературу и приняла звонок от
+  <a href="../DmitryPetrovich/">Дмитрия Петровича</a>, который хотел убедиться, что с учениками всё хорошо. После этого
+  <a href="/fandom/articles/MarkArefiev/">Марк</a> вызвал такси, чтобы отвезти Диану обратно в отель. Дальше её память обрывается.
+</p>
+
+<h3 id="section-6">Похищение и выживание</h3>
+<p>
+  Очнувшись, Диана обнаружила себя связанной в старом доме почти заброшенной деревни. <a href="/fandom/articles/MarkArefiev/">Марк</a> удерживал её силой и
+  объяснил, что помощи ждать неоткуда: рядом оставались только несколько стариков на другом конце деревни. Его
+  одержимость быстро переросла в сексуальное насилие.
+</p>
+<p>
+  На протяжении этого эпизода Диана пытается выжить любыми доступными способами: кричит, просит отпустить её к детям,
+  пытается выиграть время, цепляется за воспоминания о победе учеников, дождь за окном и воображаемые сцены, которые
+  позволяют ей хотя бы ненадолго отстраниться от происходящего. Её реакция не сводится к простой беспомощности: даже в
+  связанном положении она сохраняет наблюдательность, злость и способность искать слабые места в поведении похитителя.
+</p>
+<p>
+  После насилия <a href="/fandom/articles/MarkArefiev/">Марк</a> заявил, что «сделал всё, что хотел», и частично освободил Диану, оставив ей возможность
+  развязаться самостоятельно. Затем он ушёл на кухню и застрелился. Диана сумела освободиться, убедилась, что опасность
+  больше не движется к ней, забрала обувь и покинула дом, не зная, где находится и как добраться до цивилизации.
+</p>
+
+<h3 id="section-7">Диана в «Уберлебен»</h3>
+<p>
+  В «Уберлебен» Диана появляется уже в 43 года. К этому времени она вместе с Эльвирой смогла уехать из России и
+  оказалась в Хагенвердере, маленькой общине на востоке Германии. В доме Софии обе женщины восстанавливаются после
+  тяжёлого пути: Диана лежит на кровати с травмированной спиной и почти не понимает немецкую речь Марты, Софии и
+  Стефана.
+</p>
+<p>
+  Разговор о работе в поле вызывает у Дианы резкую травматическую реакцию: отдельная фраза возвращает её к событиям
+  двадцатилетней давности и голосу <a href="/fandom/articles/MarkArefiev/">Марка</a>. Из-за боли в спине и психологического триггера она просит не отправлять её в
+  поле, а дать работу на кухне. Стефан переводит эту просьбу мягче, чем она прозвучала по-русски, и Диане разрешают
+  сначала восстановиться и работать только на кухне.
+</p>
+
+<h2 id="section-8">Личность</h2>
+<p>
+  Диана сочетает профессиональную уверенность с личной закрытостью. Как педагог она умеет объяснять, анализировать и
+  выстраивать систему; как частный человек она осторожна, почти не подпускает людей к себе и болезненно реагирует на
+  навязчивое внимание. В кризисной ситуации её главное качество — не героическая неуязвимость, а способность думать даже
+  тогда, когда обстоятельства ломают привычный контроль.
+</p>
+
+<h2 id="section-9">Отношения</h2>
+<h3 id="section-10"><a href="../MarkArefiev/">Марк Витальевич</a></h3>
+<p>
+  <a href="/fandom/articles/MarkArefiev/">Марк</a> сначала кажется Диане неловким коллегой, который просит профессионального совета, но его интерес быстро
+  раскрывается как опасная одержимость. Для Дианы он становится похитителем и насильником, а его самоубийство оставляет
+  её с необходимостью спасаться самостоятельно, без ясного внешнего свидетеля произошедшего.
+</p>
+
+<h3 id="section-11"><a href="../DmitryPetrovich/">Дмитрий Петрович</a></h3>
+<p>
+  <a href="/fandom/articles/DmitryPetrovich/">Дмитрий Петрович</a> — директор школы, где работает Диана. Его звонок после олимпиады подчёркивает рабочую сторону её
+  жизни: он интересуется учениками, поздравляет Диану с победой и доверяет ей возвращение команды домой.
+</p>
+
+<h3 id="section-12">Эльвира, София, Стефан и Марта</h3>
+<p>
+  В «Уберлебен» Диана связана с Эльвирой как с другой женщиной, выбравшейся из России. София и Стефан помогают ей
+  восстановиться и адаптироваться, а Марта представляет суровую практическую сторону новой среды, где каждый должен
+  работать и учить язык.
+</p>
+
+<h2 id="section-13">Интересные факты</h2>
+<ul>
+  <li>Команда Дианы из Иркутска заняла первое место на олимпиаде, обойдя команду <a href="/fandom/articles/MarkArefiev/">Марка</a> из Новосибирска.</li>
+  <li>Диана не любит алкоголь; во время разговора с <a href="/fandom/articles/MarkArefiev/">Марком</a> она выбирает чёрный чай со вкусом барбариса.</li>
+  <li>Эпизод с заброшенной деревней в «От предвечной Тьмы к лунному Свету» возможно работает как межтекстовый отголосок её истории: совпадают дом, кресло с обрывками верёвок, пистолет, женское бельё и география около Новосибирска.</li>
+  <li>При таком прочтении метеоритный удар <a href="/fandom/articles/IgorMerkulov/">Игоря</a> становится запоздалым жестом очищения: он не знает имени Дианы, но всё равно реагирует на боль, сохранившуюся в доме.</li>
+</ul>
+
+        </div>
+        
+    <section class="related">
+      <h2>Связанные статьи</h2>
+      <div class="related-grid">
+        
+    <a class="entity-card" href="/fandom/articles/MarkArefiev/">
+      <strong>Марк Витальевич</strong>
+      <span>Учитель математики из Новосибирска, наставник команды-призёра и центральный антагонист рассказа «Гореть тебе в Аду».</span>
+    </a>
+  
+    <a class="entity-card" href="/fandom/articles/DmitryPetrovich/">
+      <strong>Дмитрий Петрович</strong>
+      <span>Директор школы, где работает Диана Николаевна, появляющийся в рассказе как заботливый руководитель и голос профессионального признания.</span>
+    </a>
+  
+      </div>
+    </section>
+  
+        
+    <section class="navbox-list" aria-label="Навигационные блоки">
+      
+        <section class="navbox-work-section" aria-label="Гореть тебе в Аду">
+          <h2 class="navbox-work-title">Гореть тебе в Аду</h2>
+          
+              <table class="navbox mw-collapsible nowraplinks is-collapsed">
+                <tbody>
+                  <tr>
+                    <th colspan="2">
+                      <div class="navbox-heading">
+                        <a class="navbox-title" href="/fandom/groups/hellfire-characters/">Персонажи</a>
+                        <button class="navbox-toggle" type="button" aria-expanded="false" aria-controls="navbox-DianaFirsova-hellfire-characters">[развернуть]</button>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr id="navbox-DianaFirsova-hellfire-characters" class="navbox-body-row" hidden>
+                    <td><a href="/fandom/articles/DianaFirsova/">Диана Николаевна</a> · <a href="/fandom/articles/MarkArefiev/">Марк Витальевич</a> · <a href="/fandom/articles/DmitryPetrovich/">Дмитрий Петрович</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </section>
+      
+        <section class="navbox-work-section" aria-label="Уберлебен">
+          <h2 class="navbox-work-title">Уберлебен</h2>
+          
+              <table class="navbox mw-collapsible nowraplinks is-collapsed">
+                <tbody>
+                  <tr>
+                    <th colspan="2">
+                      <div class="navbox-heading">
+                        <a class="navbox-title" href="/fandom/groups/uberleben-supporting/">Второстепенные персонажи</a>
+                        <button class="navbox-toggle" type="button" aria-expanded="false" aria-controls="navbox-DianaFirsova-uberleben-supporting">[развернуть]</button>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr id="navbox-DianaFirsova-uberleben-supporting" class="navbox-body-row" hidden>
+                    <td><a href="/fandom/articles/DianaFirsova/">Диана Николаевна</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            
+        </section>
+      
+    </section>
+  
+      </article>
+    </main>
+  
+  <aside id="cookie-panel" class="cookie-panel">
+    <p>Этот сайт всё ещё делает вид, что ему нужен cookie-блок. Но теперь он хотя бы не лежит поперёк текста.</p>
+    <button id="close-cookie-panel" type="button" aria-label="Закрыть cookie-блок">×</button>
+  </aside>
+  <div id="image-modal" class="image-modal" hidden>
+    <button class="image-modal-close" type="button" aria-label="Закрыть изображение">×</button>
+    <figure class="image-modal-frame">
+      <img alt="">
+      <figcaption class="image-modal-caption" hidden></figcaption>
+    </figure>
+  </div>
+  <script id="search-index" type="application/json">[{"title":"Игорь Меркулов","aliases":["Игорь","Игорь Михайлович Меркулов","Чайный Мститель"],"summary":"Главный герой произведения, IT-специалист и Чайный Мститель, получивший божественные способности после сделки с Йельшасом.","type":"Персонаж","url":"/fandom/articles/IgorMerkulov/"},{"title":"Йельшас","aliases":["Йельшас"],"summary":"Божественная сущность из павшего серого мира, источник магических сил Игоря Меркулова и его названый брат.","type":"Персонаж","url":"/fandom/articles/Yelshas/"},{"title":"Авакутх","aliases":["Авакутх"],"summary":"Один из могущественных богов серого мира, соплеменник Йельшаса, начавший как защитник справедливости и постепенно превратившийся в тирана.","type":"Персонаж","url":"/fandom/articles/Avakuth/"},{"title":"Шалхут","aliases":["Шалхут"],"summary":"Один из богов павшего серого мира, пытавшийся искоренить насилие и жадность через лишения, дисциплину и жёсткий контроль.","type":"Персонаж","url":"/fandom/articles/Shalkhut/"},{"title":"Инишраэда","aliases":["Инишраэда"],"summary":"Богиня серого мира, создавшая общество без страданий, где народ постепенно утратил волю и способность к самостоятельному выбору.","type":"Персонаж","url":"/fandom/articles/Inishraeda/"},{"title":"Мнаалх","aliases":["Мнаалх"],"summary":"Бог серого мира, связанный с коллективным разумом и идеей идеального сна, в котором порядок достигается ценой человеческой отдельности.","type":"Персонаж","url":"/fandom/articles/Mnaalkh/"},{"title":"Эрхенес","aliases":["Эрхенес"],"summary":"Бог серого мира, архитектор цивилизации логики и эффективности, а также второстепенный участник линии «Всегда найдётся рыба крупнее».","type":"Персонаж","url":"/fandom/articles/Erkhenes/"},{"title":"Геонетика","aliases":["ООО «Геонетика»","Geonetika"],"summary":"Региональная IT-компания, где работал Игорь Меркулов до превращения в Чайного Мстителя.","type":"Организация","url":"/fandom/articles/Geonetika/"},{"title":"Полковник Беловец","aliases":["Владимир Беловец","Володя Беловец","Владимир Евгеньевич Беловец"],"summary":"Полковник и прагматичный силовик, участвующий в работе оперативного штаба по поимке Чайного Мстителя.","type":"Персонаж","url":"/fandom/articles/VladimirBelovets/"},{"title":"Леонид Студяров","aliases":["Леонид","Студяров"],"summary":"Высокопоставленный чиновник, занимавшийся государственными заказами и ставший первой сознательно выбранной целью Чайного Мстителя.","type":"Персонаж","url":"/fandom/articles/LeonidStudyarov/"},{"title":"Ольга Форгунова","aliases":["Ольга Форгунова","Форгунова"],"summary":"Судья с двадцатилетним стажем, бравшая взятки за смягчение приговоров и ставшая одной из ранних целей Чайного Мстителя.","type":"Персонаж","url":"/fandom/articles/OlgaForgunova/"},{"title":"Савелий Кенин","aliases":["Савелий Кенин","Кенин"],"summary":"Депутат областной думы, использованный как приманка для Чайного Мстителя и затем убитый людьми Шалыкина.","type":"Персонаж","url":"/fandom/articles/SavelyKenin/"},{"title":"Даниил Закутасов","aliases":["Закутасов","Даниил"],"summary":"Чиновник Минстроя, чьи украденные данные вывели Игоря на более опасные теневые схемы и дело об убийстве депутата.","type":"Персонаж","url":"/fandom/articles/DaniilZakutasov/"},{"title":"Серафим Кушнарёвский","aliases":["Серафим","Серафим Яковлевич Кушнарёвский"],"summary":"Крупный промышленник, генеральный директор «ФторХимКомплекса» и отец Риты, чья деятельность становится моральной проблемой для Игоря.","type":"Персонаж","url":"/fandom/articles/SeraphimKushnarevsky/"},{"title":"ФторХимКомплекс","aliases":["ФХК","ООО «ФторХимКомплекс»"],"summary":"Крупное промышленное предприятие, символизирующее системную коррупцию, эксплуатацию рабочих и экологическую катастрофу.","type":"Организация","url":"/fandom/articles/FtorHimKompleks/"},{"title":"ТехноСтройПлюс","aliases":["«ТехноСтройПлюс»"],"summary":"Строительная компания, связанная с проектом нового НПЗ и экологической угрозой для леса, где живёт воробьиная разведка Джезефа.","type":"Организация","url":"/fandom/articles/TechnoStroyPlus/"},{"title":"Факин Системс (FS Data Labs)","aliases":["Факин Системс","FS Data Labs","FSDataLabs"],"summary":"IT-компания, ставшая финальным местом работы Игоря Меркулова и контрастом к токсичной среде «Геонетики».","type":"Организация","url":"/fandom/articles/FSDataLabs/"},{"title":"НорСталь","aliases":["«НорСталь»"],"summary":"Крупное промышленное предприятие с токсичной управленческой средой и хроническим кризисом рабочих процессов.","type":"Организация","url":"/fandom/articles/NorSteel/"},{"title":"КварцОптима","aliases":["«КварцОптима»"],"summary":"Коммерческая компания электроники, построенная на ребрендинге, обмане потребителей, эксплуатации сотрудников и коррупции.","type":"Организация","url":"/fandom/articles/QuartzOptima/"},{"title":"Юрий Бугуев","aliases":["Юрий Родионович Бугуев","Бугуев"],"summary":"Начальник цеха «НорСтали», грубый и авторитарный руководитель, пытающийся удержать разваливающиеся процессы силовыми методами.","type":"Персонаж","url":"/fandom/articles/YuriBuguev/"},{"title":"Михаил Остащин","aliases":["Михаил Александрович Остащин","Остащин"],"summary":"Олигарх и владелец сети НПЗ, связанный с краденой нефтью, экологическими преступлениями и проектом нового завода.","type":"Персонаж","url":"/fandom/articles/MikhailOstaschin/"},{"title":"Егор Шалыкин","aliases":["Егор Шалыкин (shale76)","shale76","Шалыкин"],"summary":"Теневой делец и организатор коррупционных схем, связанный с убийством депутата, которое приписали Чайному Мстителю.","type":"Персонаж","url":"/fandom/articles/EgorShalykin/"},{"title":"Роман Мариатин","aliases":["Рома","RomanMariatin"],"summary":"Студент, за которым Йельшас наблюдает, впервые сталкиваясь с болезненной нелинейностью человеческих желаний.","type":"Персонаж","url":"/fandom/articles/RomanMariatin/"},{"title":"Алина Цвиллинг","aliases":["Алина","AlinaTsvilling"],"summary":"Дочь бизнесмена Цвиллинга, стритрейсерша и участница громкого скандала, через который Игорь и Йельшас ударили по преступной сети её семьи.","type":"Персонаж","url":"/fandom/articles/AlinaTsvilling/"},{"title":"Магистр Сигизмунд","aliases":["Сигизмунд","магистр Сигизмунд"],"summary":"Псевдооккультный эксперт, приглашённый в штаб по поимке Чайного Мстителя и быстро разоблачённый как шарлатан.","type":"Персонаж","url":"/fandom/articles/Sigismund/"},{"title":"Ворон","aliases":["Voron"],"summary":"Актёр и псевдоэкстрасенс с мистическим имиджем, привлечённый к работе штаба как один из «специалистов другого профиля».","type":"Персонаж","url":"/fandom/articles/Voron/"},{"title":"Мереана","aliases":["Mereana"],"summary":"Псевдоэкстрасенс, приглашённая в военный штаб и быстро удалённая оттуда из-за провала проверки и влияния на дисциплину.","type":"Персонаж","url":"/fandom/articles/Mereana/"},{"title":"Митрофан Мостовский","aliases":["Митрофан","Митрофан Мостовик"],"summary":"Старый колдун, к которому Беловец обращался в молодости и которого позже силой доставили в штаб для борьбы с Чайным Мстителем.","type":"Персонаж","url":"/fandom/articles/MitrofanMostovsky/"},{"title":"Маска","aliases":["Маска","человек в маске","мужик в чёрной маске","Mask"],"summary":"Загадочный противник из снов Игоря Меркулова, сражающийся с ним магией огня и влияющий на образ Чайного Мстителя.","type":"Персонаж","url":"/fandom/articles/Mask/"},{"title":"Углеродная броня Игоря","aliases":["броня Игоря","углеродная броня","доспехи Игоря","доспехи","броня","Armor"],"summary":"Индивидуальный защитный комплект Чайного Мстителя, разработанный Игорем Меркуловым после столкновения с вооружёнными людьми.","type":"Артефакт","url":"/fandom/articles/Armor/"},{"title":"Юрий Гарматин","aliases":["Юра","Юрий","Гарматин"],"summary":"Энергичный заводила дружеской компании Игоря, бывший муж Лидии Удельман и человек, чья простая философия жизни контрастировала с рефлексией Игоря.","type":"Персонаж","url":"/fandom/articles/YuriGarmatin/"},{"title":"Лидия Удельман","aliases":["Лида","Лидия","Удельман"],"summary":"Травматолог, бывшая жена Юрия Гарматина и давняя подруга Игоря, к которой он сохранял уважение и осторожную эмоциональную дистанцию.","type":"Персонаж","url":"/fandom/articles/LidiaUdelman/"},{"title":"Екатерина Пилипцева","aliases":["Катя","Екатерина","Катя Пилипцева"],"summary":"Жизнерадостная участница компании Игоря, возлюбленная Матвея и невольная «сваха», подтолкнувшая Игоря и Настю к отношениям.","type":"Персонаж","url":"/fandom/articles/KatyaPilipceva/"},{"title":"Матвей Левченко","aliases":["Матвей","Левченко"],"summary":"Спокойный ценитель чая, кофе и настольных игр, партнёр Екатерины Пилипцевой и один из старых друзей Игоря.","type":"Персонаж","url":"/fandom/articles/MatveyLevchenko/"},{"title":"Анастасия Галланова","aliases":["Настя","Анастасия","Настя Галланова"],"summary":"Студентка-лингвистка, случайно вошедшая в компанию Игоря после похода в кино и ставшая его первой девушкой.","type":"Персонаж","url":"/fandom/articles/NastyaGallanova/"},{"title":"Рита Кушнарёвская","aliases":["Рита","Маргарита Кушнарёвская","Маргарита Серафимовна Кушнарёвская"],"summary":"Студентка, возлюбленная Игоря Меркулова и дочь Серафима Кушнарёвского, связанная с центральной эмоциональной линией произведения.","type":"Персонаж","url":"/fandom/articles/RitaKushnarevskaya/"},{"title":"Джезеф Каганович-младший","aliases":["Джезеф","Джезеф Каганович-младший","Sparrow"],"summary":"Говорящий воробей-аналитик, учёный-эколог, партнёр Игоря Меркулова по «научному союзу» и будущий главный герой «Всегда найдётся рыба крупнее».","type":"Персонаж","url":"/fandom/articles/DjezefKaganovichJr/"},{"title":"Джезеф Каганович-старший","aliases":["Джезеф Каганович-старший","Каганович-старший","отец Джезефа"],"summary":"Отец Джезефа Кагановича-младшего и спокойный представитель птичьей исследовательской линии, запланированный для сиквела.","type":"Персонаж","url":"/fandom/articles/DjezefKaganovichSr/"},{"title":"Уолтер Морриган","aliases":["Уолтер Морриган","Уолтер"],"summary":"Соловей-агент Джезефа, исполнительный и терпеливый, но не слишком умный участник будущего расследования.","type":"Персонаж","url":"/fandom/articles/WalterMorrigan/"},{"title":"Письмена Эрхенеса","aliases":["Письмена Эрхенеса","магические письмена","письмена"],"summary":"Магические наскальные письмена, оставленные Эрхенесом на Земле и связанные с происхождением разумных животных.","type":"Артефакт","url":"/fandom/articles/ErkhenesInscriptions/"},{"title":"Вадим Андреевич","aliases":["Вадим Андреевич Скурыгин","Вадим","Скурыгин","Скурыч"],"summary":"Генеральный директор «Геонетики», бывший начальник Игоря Меркулова и пример токсичного управленца, экономящего на сотрудниках.","type":"Персонаж","url":"/fandom/articles/VadimAndreevich/"},{"title":"Никита Юготкин","aliases":["Никита"],"summary":"Бывший младший разработчик «Геонетики», подопечный Игоря и коллега Кости, уволенный после попытки заменить джунов студентом с нейронкой.","type":"Персонаж","url":"/fandom/articles/NikitaYugotkin/"},{"title":"Константин Неринов","aliases":["Костя","Константин"],"summary":"Бывший младший разработчик «Геонетики», коллега Никиты и бывший подопечный Игоря, позже обратившийся к нему за помощью с трудоустройством.","type":"Персонаж","url":"/fandom/articles/KostyaNerinov/"},{"title":"Диана Николаевна","aliases":["Диана","Фирсова Диана Николаевна","Диана Фирсова"],"summary":"Учительница математики из «школы нового формата», главная героиня «Гореть тебе в Аду» и позднее одна из женщин, сумевших выбраться из России в «Уберлебен».","type":"Персонаж","url":"/fandom/articles/DianaFirsova/"},{"title":"Марк Витальевич","aliases":["Марк","Арефьев Марк Витальевич","Марк Арефьев"],"summary":"Учитель математики из Новосибирска, наставник команды-призёра и центральный антагонист рассказа «Гореть тебе в Аду».","type":"Персонаж","url":"/fandom/articles/MarkArefiev/"},{"title":"Дмитрий Петрович","aliases":["Директор","Дмитрий Петрович"],"summary":"Директор школы, где работает Диана Николаевна, появляющийся в рассказе как заботливый руководитель и голос профессионального признания.","type":"Персонаж","url":"/fandom/articles/DmitryPetrovich/"},{"title":"Аркадий Волошин","aliases":["Voloshin","ArkadyVoloshin"],"summary":"Персонаж из Mondwiki. Краткое описание будет добавлено позже.","type":"Персонаж","url":"/fandom/articles/ArkadyVoloshin/"},{"title":"Полковник Моховиков","aliases":["Mokhovikov","Mokhovikov"],"summary":"Статья ещё не перенесена.","type":"Персонаж","url":"/fandom/articles/Mokhovikov/"},{"title":"Полковник Мугеров","aliases":["Mugerov","Mugerov"],"summary":"Статья ещё не перенесена.","type":"Персонаж","url":"/fandom/articles/Mugerov/"},{"title":"Генерал-майор Шардинин","aliases":["Shardinin","Shardinin"],"summary":"Статья ещё не перенесена.","type":"Персонаж","url":"/fandom/articles/Shardinin/"},{"title":"Генерал-майор Журонов","aliases":["Zhurnov","Zhurnov"],"summary":"Статья ещё не перенесена.","type":"Персонаж","url":"/fandom/articles/Zhurnov/"},{"title":"Главные герои","aliases":["mondschein-main-heroes"],"summary":"Центральные персонажи произведения «От предвечной Тьмы к лунному Свету».","type":"Группа","url":"/fandom/groups/mondschein-main-heroes/"},{"title":"Главные герои","aliases":["bigger-fish-main-heroes"],"summary":"Центральные персонажи произведения «Всегда найдётся рыба крупнее».","type":"Группа","url":"/fandom/groups/bigger-fish-main-heroes/"},{"title":"Персонажи","aliases":["hellfire-characters"],"summary":"Персонажи рассказа «Гореть тебе в Аду».","type":"Группа","url":"/fandom/groups/hellfire-characters/"},{"title":"Второстепенные персонажи","aliases":["uberleben-supporting"],"summary":"Персонажи, появляющиеся в линии «Уберлебен» как второстепенные участники.","type":"Группа","url":"/fandom/groups/uberleben-supporting/"},{"title":"Дружеская компания Игоря","aliases":["igor-friends"],"summary":"Компания друзей из прошлого Игоря.","type":"Группа","url":"/fandom/groups/igor-friends/"},{"title":"Второстепенные персонажи","aliases":["bigger-fish-supporting"],"summary":"Персонажи, появляющиеся в линии «Всегда найдётся рыба крупнее» как второстепенные участники.","type":"Группа","url":"/fandom/groups/bigger-fish-supporting/"},{"title":"Сотрудники Геонетики","aliases":["geonetika-staff"],"summary":"Люди, связанные с ООО «Геонетика».","type":"Группа","url":"/fandom/groups/geonetika-staff/"},{"title":"Обитатели Серого мира","aliases":["gray-world-gods"],"summary":"Сущности, связанные с погибшим Серым миром.","type":"Группа","url":"/fandom/groups/gray-world-gods/"},{"title":"Чиновники","aliases":["mondschein-officials"],"summary":"Представители чиновничьей и административной линии произведения.","type":"Группа","url":"/fandom/groups/mondschein-officials/"},{"title":"Бизнесмены","aliases":["mondschein-businessmen"],"summary":"Предприниматели и управленцы, связанные с коммерческими линиями произведения.","type":"Группа","url":"/fandom/groups/mondschein-businessmen/"},{"title":"Военные","aliases":["mondschein-military"],"summary":"Персонажи, связанные с силовой и военной линией охоты на Чайного Мстителя.","type":"Группа","url":"/fandom/groups/mondschein-military/"},{"title":"Организации","aliases":["mondschein-organizations"],"summary":"Компании и структуры, упомянутые в произведении.","type":"Группа","url":"/fandom/groups/mondschein-organizations/"},{"title":"Прочие персонажи","aliases":["mondschein-other-characters"],"summary":"Остальные персонажи произведения, не входящие в более узкие навигационные группы.","type":"Группа","url":"/fandom/groups/mondschein-other-characters/"}]</script>
+  <script src="/fandom/assets/scripts/site.js"></script>
+</body>
+</html>
